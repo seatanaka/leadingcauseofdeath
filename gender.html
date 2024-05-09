@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leading Cause of Death</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <style>
+        .menu {
+            color: #A43020;
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .item {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        .item:first-child {
+            text-align: left;
+        }
+
+        .item:last-child {
+            text-align: right;
+        }
+
+        .moving-text-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .moving-text {
+            white-space: nowrap;
+            animation: moveText 15s linear infinite;
+            color: #3d120c;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: "Dela Gothic One", sans-serif;
+            background: #EDDCC2;
+        }
+
+        #main-container {
+            display: flex;
+            height: 100vh; 
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        #cause-list {
+            background-color: #f0f0f000;
+            font-size: 160%;
+            color: #3d120c;
+        }
+
+        #chart-container {
+            width: 100%;
+            position: relative; 
+        }
+
+        .gender-div {
+            position: absolute;
+            width: 100%;
+        }
+
+        .male {
+            background-color: #A43020;
+            bottom: 0; 
+        }
+
+        .female {
+            background-color: #3d120c;
+            top: 0; 
+        }
+
+        #cause-list h3:hover {
+            color: #A43020;
+        }
+
+        @media screen and (max-width: 500px) {
+            .item {
+                margin: 0px 0;
+            }
+
+            .moving-text {
+                font-size: 14px;
+            }
+
+            #main-container {
+                flex-direction: column;
+            }
+
+            .column {
+                padding: 10px;
+            }
+
+            #cause-list {
+    font-size: 100%;
+    height: 10vh; /* Adjust the height of the cause list column */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+}
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html" class="item">HOME</a>
+        <a href="rank.html" class="item">DATA</a>
+        <a href="gender.html" class="item">RATIO</a>
+    </div>
+
+    <div class="moving-text-container">
+        <div class="moving-text">
+            Top = Female 　　　　　　　Bottom = Male
+        </div>
+    </div>
+
+    <div id="main-container">
+        <div id="cause-list" class="column">
+            <!-- Causes of death will be populated here -->
+        </div>
+        <div id="chart-container" class="column">
+            <!-- p5.js will draw the chart here -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script>
+        let causesData = [];
+        let currentCause = null;
+
+        function setup() {
+            noCanvas(); 
+            loadJSON('https://data.cityofnewyork.us/resource/jb7j-dtam.json?$query=SELECT%20%60year%60,%20%60leading_cause%60,%20%60sex%60,%20%60race_ethnicity%60,%20%60deaths%60,%20%60death_rate%60,%20%60age_adjusted_death_rate%60%20ORDER%20BY%20%60year%60%20DESC%20NULL%20FIRST', function(response) {
+                causesData = response;
+                populateCauses();
+            });
+        }
+
+        function populateCauses() {
+            let causes = Array.from(new Set(causesData.map(item => item.leading_cause))); // Convert set to array
+            causes.sort(); // Sort the causes alphabetically
+            let listContainer = document.getElementById('cause-list');
+            causes.forEach(cause => {
+                let causeElement = document.createElement('h3');
+                causeElement.innerText = cause;
+                causeElement.style.cursor = 'pointer';
+                causeElement.onclick = () => {
+                    currentCause = cause;
+                    updateChart();  
+                };
+                listContainer.appendChild(causeElement);
+            });
+        }
+
+        function updateChart() {
+            let chartContainer = document.getElementById('chart-container');
+            chartContainer.innerHTML = ''; // clear previous contents
+            
+            if (currentCause) {
+                let pattern = escapeRegExp(currentCause);
+                let regex = new RegExp(pattern, 'i');
+                let filteredData = causesData.filter(item => regex.test(item.leading_cause));
+                let genderCounts = {};
+                
+                filteredData.forEach(item => {
+                    let gender = item.sex;
+                    let deaths = parseInt(item.deaths);
+                    if (!isNaN(deaths)) {
+                        genderCounts[gender] = (genderCounts[gender] || 0) + deaths;
+                    }
+                });
+                
+                let totalDeaths = Object.values(genderCounts).reduce((a, b) => a + b, 0);
+                let maleHeight = (genderCounts['M'] / totalDeaths) * 100;
+                let femaleHeight = (genderCounts['F'] / totalDeaths) * 100;
+                
+                let maleDiv = document.createElement('div');
+                maleDiv.classList.add('gender-div', 'male');
+                maleDiv.style.height = `${maleHeight}vh`;
+                
+                let femaleDiv = document.createElement('div');
+                femaleDiv.classList.add('gender-div', 'female');
+                femaleDiv.style.height = `${femaleHeight}vh`;
+                
+                chartContainer.appendChild(femaleDiv); // female on top
+                chartContainer.appendChild(maleDiv); // male on bottom
+            }
+        }
+
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+    </script>
+</body>
+</html>

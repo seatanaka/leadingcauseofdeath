@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leading Cause of Death</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Your Google Fonts links here -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0.5%;
+            padding: 0px;
+            box-sizing: border-box;     
+            background-color: #3A1212;
+        }
+
+        .menu {
+            color: #EDDCC2;
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .item {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        .item:first-child {
+            text-align: left;
+        }
+
+        .item:last-child {
+            text-align: right;
+        }
+
+        .title h1{
+            color: #A43020;
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 320px;
+            text-align: center;
+            margin: -5%;
+        }
+
+        .title h2{
+            color: #EDDCC2;
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 110px;
+            margin: -2%;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        .arrows {
+            width: 60px;
+            height: 100px;
+            position: relative; /* Change to relative */
+            left: 50%;
+            margin-left: -30px;
+            bottom: 30%; /* Adjusted to 10% */
+            transform: translateX(-50%); /* To center horizontally */
+        }
+
+        .arrows path {
+            stroke: #EDDCC2;
+            fill: transparent;
+            stroke-width: 3px;
+            animation: arrow 2s infinite;
+            -webkit-animation: arrow 2s infinite;
+        }
+
+        @keyframes arrow {
+            0% { opacity: 0 }
+            40% { opacity: 1 }
+            80% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+
+        @-webkit-keyframes arrow {
+            0% { opacity: 0 }
+            40% { opacity: 1 }
+            80% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+
+        .arrows path.a1 {
+            animation-delay: -1s;
+            -webkit-animation-delay: -1s;
+        }
+
+        .arrows path.a2 {
+            animation-delay: -0.5s;
+            -webkit-animation-delay: -0.5s;
+        }
+
+        #about {
+            margin-top: 2%;
+        }
+
+        #about h1 {
+            color: #A43020;
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 140px;
+            margin: -30px;
+            margin-left: 0.5%;
+        }
+
+        #about h2 {
+            color: #EDDCC2;
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 40px;
+        }
+
+        #about p {
+            color: #EDDCC2;
+            font-family: "Cutive Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 7%;
+            margin-left: 30%;
+            margin-right: 30px;
+            line-height: 170%;
+        }
+
+        .source {
+            color: #EDDCC2;
+            font-family: "Share Tech", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 8%;
+            margin-top: 10%;
+        }
+
+        @media screen and (max-width: 500px) {
+            /* Adjust font sizes for smaller screens */
+            .title h1 {
+                font-size: 100px;
+            }
+
+            .title h2 {
+                margin-top: 6%;
+                margin-bottom: 3%;
+                font-size: 55px;
+            }
+
+            #about h1 {
+                font-size: 64px;
+                margin: 10px;
+                line-height: 100%;
+                
+            }
+
+            #about h2 {
+
+                font-size: 30px;
+                line-height: 100%;
+            }
+
+            #about p {
+                margin-top: 5%;
+                margin-left: 0.5%;
+                margin-right: 10%;
+                font-size: 17px;
+            }
+
+            .arrows {
+                margin-left: 1%;
+            }
+
+            .source {
+                font-size: 6px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html" class="item">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="rank.html" class="item">DATA</a>
+    </div>
+
+    <div class="title">
+        <h2>LEADING CAUSE OF </h2>
+        <a href="rank.html">
+            <h1>DEATH</h1>
+        </a>
+        <h2>IN NEW YORK CITY</h2>
+    </div>
+
+    <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+
+    <div id="about">
+        <h2>APPROX <br> </h2>
+        <h1>57 THOUSAND</h1>
+        <h2>PEOPLE DIE <br> IN NYC <br> EVERY YEAR...</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. At augue eget arcu dictum varius. Nulla at volutpat diam ut venenatis tellus in metus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. At augue eget arcu dictum varius. Nulla at volutpat diam ut venenatis tellus in metus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. At augue eget arcu dictum varius. Nulla at volutpat diam ut venenatis tellus in metus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. At augue eget arcu dictum varius. Nulla at volutpat diam ut venenatis tellus in metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. At augue eget arcu dictum varius. Nulla at volutpat diam ut venenatis tellus in metus.
+        </p>
+    </div>
+
+    <div class="source">
+        <p>SOURCES<br>
+            All 2021 data are final. 2021 birth data come from the National Vital Statistics System (NVSS) via CDC WONDER; 2021 death data, including leading causes of death, firearm mortality, homicide, drug overdose mortality, and infant mortality, come from the NVSS via CDC WONDER and rankings and rates are based on 2021 age-adjusted death rates. For more information on age-adjustment, refer to this report. Where ranked, states are categorized from highest rate to lowest rate. Although adjusted for variations in age-distribution and population size, differences by state do not take into account other state specific population characteristics that may affect the level of the birth characteristic or mortality. When the number of deaths or births events is small, differences by state may be unreliable due to instability in rates. When the number of deaths is small, rankings by state may be unreliable due to instability in death rates. Marriage and divorce data come from published tables from the Division of Vital Statistics, National Center for Health Statistics, CDC.
+        </p>
+    </div>
+</body>
+</html>

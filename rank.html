@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leading Cause of Death</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dela+Gothic+One&family=Josefin+Sans:ital,wght@0,300;1,300&family=Kode+Mono:wght@400..700&family=Mulish:ital,wght@0,1000;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0.5%;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: #EDDCC2;
+        }
+
+        .collapsible {
+            color: #3A1212;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 8vw; /* Adjust based on screen size */
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .content {
+            padding: 32px;
+            display: none;
+            overflow: hidden;
+            color: #3A1212;
+            line-height: 150%;
+            font-size: 1.4vw; /* Adjust based on screen size */
+            font-family: "Cutive Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: -3%;
+        }
+
+        .menu {
+            color: #A43020;
+            font-family: "Dela Gothic One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+        }
+
+        .item {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        .item:first-child {
+            text-align: left;
+        }
+
+        .item:last-child {
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @media screen and (max-width: 768px) {
+            /* Adjust font sizes for smaller screens */
+            .collapsible {
+                font-size: 9.7vw;
+            }
+
+            .content {
+                font-size: 3vw;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <a href="index.html" class="item">HOME</a>
+    <a href="rank.html" class="item">DATA</a>
+    <a href="gender.html" class="item">RATIO</a>
+</div>
+
+<button type="button" class="collapsible">1. HEART DISEASE</button>
+<div class="content">
+    <P>
+        Heart disease encompasses a range of conditions affecting the heart's structure and function, including coronary artery disease, heart attacks, and heart failure. Factors contributing to heart disease-related deaths in NYC may include lifestyle choices, such as poor diet, lack of exercise, and smoking, as well as socioeconomic factors like access to healthcare and education. These complexities make heart disease a significant concern for public health in NYC.
+    </P>
+</div>
+
+<button type="button" class="collapsible">2. CANCER</button>
+<div class="content">
+    <p>
+        Cancer represents another significant cause of mortality in NYC, with various types impacting its population. Factors contributing to cancer-related deaths include genetic predisposition, environmental exposures, lifestyle choices, and access to healthcare. Efforts to address cancer mortality in NYC often involve early detection programs, promoting healthy behaviors, and improving access to screening and treatment services for underserved communities.</p>
+</div>
+
+<button type="button" class="collapsible">3. COVID-19</button>
+<div class="content">
+    <p>
+        COVID-19 has had a profound impact on NYC's mortality rate since its emergence. The virus, caused by the novel coronavirus, has led to a significant number of deaths in the city. Factors contributing to COVID-19-related mortality include the virus's high transmission rate, particularly in densely populated urban areas like NYC, as well as challenges in healthcare capacity and access to resources. Efforts to mitigate COVID-19 mortality have included vaccination campaigns, public health measures such as masking and social distancing, and healthcare system reinforcement.</p>
+</div>
+
+<button type="button" class="collapsible">4. ACCIDENTS</button>
+<div class="content">
+    <p>
+        Accidents represent a notable cause of mortality in NYC, encompassing various incidents such as motor vehicle collisions, falls, and workplace accidents. Factors contributing to accident-related deaths may include infrastructure challenges, human error, and environmental factors. Efforts to reduce accident mortality in NYC involve initiatives such as improving transportation safety measures, enhancing workplace regulations, and promoting public awareness campaigns on accident prevention and emergency response.</p>
+</div>
+
+<button type="button" class="collapsible">5. STROKE</button>
+<div class="content">
+    <p>
+        Stroke is a significant contributor to mortality in NYC, affecting individuals of all ages and backgrounds. It occurs when blood flow to the brain is interrupted, leading to brain damage and potentially fatal consequences. Risk factors for stroke include high blood pressure, smoking, diabetes, and unhealthy diet. In NYC, efforts to reduce stroke mortality focus on public education about risk factors and symptoms, access to healthcare services for prevention and treatment, and community-based interventions to promote healthier lifestyles and early detection.</p>
+</div>
+
+<button type="button" class="collapsible">6. Chronic Lower Respiratory Diseases</button>
+<div class="content">
+    <p>
+        Chronic lower respiratory diseases (CLRD), such as chronic obstructive pulmonary disease (COPD) and asthma, also contribute to mortality in NYC. These conditions affect the lungs, causing long-term breathing difficulties and reducing overall lung function. Risk factors for CLRD include smoking, exposure to air pollution, and occupational hazards. In NYC, efforts to address CLRD-related mortality involve smoking cessation programs, air quality improvement initiatives, access to healthcare services for diagnosis and management, and public education campaigns to raise awareness about the importance of lung health.</p>
+</div>
+
+<button type="button" class="collapsible">7. Diabetes</button>
+<div class="content">
+    <p>
+        Diabetes is a significant contributor to mortality in NYC, affecting individuals across all age groups and demographics. It is a chronic condition characterized by high blood sugar levels, which can lead to various complications if left untreated. Risk factors for diabetes include genetics, obesity, unhealthy diet, and lack of physical activity. In NYC, efforts to address diabetes-related mortality focus on prevention through promoting healthy lifestyle behaviors, increasing access to nutritious food options and physical activity opportunities, improving diabetes management and education programs, and enhancing healthcare access for screening, diagnosis, and treatment.</p>
+</div>
+
+<button type="button" class="collapsible">8. Influenza<br>Pneumonia</button>
+<div class="content">
+    <p>
+        Influenza and pneumonia are also significant contributors to mortality in NYC, particularly among vulnerable populations such as the elderly and individuals with weakened immune systems. Both influenza (the flu) and pneumonia are respiratory infections that can lead to severe complications, including death, especially during flu seasons or outbreaks. Efforts to address influenza and pneumonia-related mortality in NYC involve widespread vaccination campaigns, public health initiatives to promote preventive measures like hand hygiene and respiratory etiquette, early detection and treatment protocols, and healthcare system readiness to manage outbreaks effectively.</p>
+</div>
+
+<button type="button" class="collapsible">9. Alzheimer's Disease</button>
+<div class="content">
+    <p>
+        Alzheimer's disease is a leading cause of mortality in NYC, particularly among the elderly population. It is a progressive neurodegenerative disorder characterized by cognitive decline, memory loss, and eventually, loss of bodily functions. Risk factors for Alzheimer's include age, genetics, and certain lifestyle factors. Efforts to address Alzheimer's-related mortality in NYC focus on increasing awareness and education about the disease, providing support services for patients and caregivers, advancing research into prevention and treatment strategies, and enhancing access to quality healthcare for early detection and management of symptoms.</p>
+</div>
+
+<button type="button" class="collapsible">10. Hypertension</button>
+<div class="content">
+    <p>Hypertension, or high blood pressure, is a significant contributor to mortality in NYC and worldwide. It is a chronic medical condition that increases the risk of heart disease, stroke, and other serious health complications if left untreated. Risk factors for hypertension include genetics, lifestyle choices such as diet and physical activity, obesity, and stress. Efforts to address hypertension-related mortality in NYC involve public health campaigns to raise awareness about the importance of blood pressure control, promoting healthy lifestyle behaviors, increasing access to healthcare services for screening and treatment, and implementing community-based interventions to reduce risk factors and improve cardiovascular health.</p>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
